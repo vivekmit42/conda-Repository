@@ -1,0 +1,4 @@
+Step 1: Install Conda3 
+Step 2: Install conda-mirror
+        conda install -c conda-forge  conda-mirror
+Step 3: Create a yaml conf file so that it can pull conffrom that
