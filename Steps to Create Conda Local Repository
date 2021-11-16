@@ -1,4 +1,10 @@
 Step 1: Install Conda3 
 Step 2: Install conda-mirror
         conda install -c conda-forge  conda-mirror
-Step 3: Create a yaml conf file so that it can pull conffrom that
+Step 3: Create a conf.yaml conf file so that it can pull package according to your need specified in that configuration file.(attached withit).
+Step 4: Dry run to check your package available or not.
+        conda-mirror --upstream-channel main --target-directory /home/vm/Music/Conda/ --config /home/vm/conf.yaml --dry-run --platform linux-64 -vv
+Step 5: Directly download all package from the official mirror without using conf.yaml file using following command.
+        conda-mirror --upstream-channel main --target-directory /home/vm/Music/Conda/ --platform linux-64 -vv
+Step 6: Download package using conf.yaml file with the following command.
+        conda-mirror --upstream-channel main --target-directory /home/vm/Music/Conda/ --platform linux-64 -vv
